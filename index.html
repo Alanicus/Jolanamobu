@@ -3,104 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jolanamobu - Coming Soon</title>
+    <title>Jolanamobu - Statement Art Clothing</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            background-color: #f5f5f5;
             color: #333;
         }
-
-        .container {
+        .header {
+            background-color: #white;
+            padding: 20px;
             text-align: center;
-            background-color: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            width: 90%;
-            max-width: 600px;
-            border: 5px solid #ff9a9e;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
-        h1 {
-            font-size: 60px;
-            margin: 0;
-            font-weight: 700;
-            color: #ff5f6d;
-            background: -webkit-linear-gradient(#ff9a9e, #fecfef);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #e6f7ff;
+            background-image: url('background.png'); /* Your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
         }
+        /* Styling the main slogan text */
+        .hero h2 {
+    font-size: 54px;
+    color: #333333;
+    text-shadow:
+        1px 1px 2px #000000,  /* Dark bevel */
+        -1px -1px 2px rgba(255, 255, 255, 0.6), /* Light bevel */
+        0 0 10px rgba(255, 255, 255, 0.8); /* Glow */
+    margin-bottom: 20px;
+}
 
-        p {
-            font-size: 22px;
-            color: #666;
-            margin: 20px 0;
+.hero p {
+    font-size: 28px;
+    color: #333333;
+    text-shadow:
+        1px 1px 2px #000000,  /* Dark bevel */
+        -1px -1px 2px rgba(255, 255, 255, 0.6), /* Light bevel */
+        0 0 10px rgba(255, 255, 255, 0.8); /* Glow */
+    margin-bottom: 30px;
+}
+        .hero button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
         }
-
-        .email {
-            margin-top: 30px;
+        .hero button:hover {
+            background-color: #555;
         }
-
-        .email a {
-            font-size: 20px;
+        .links {
+            text-align: center;
+            padding: 50px;
+        }
+        .links a {
+            display: inline-block;
+            margin: 0 20px;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #333;
             text-decoration: none;
-            color: #ff5f6d;
-            font-weight: bold;
-            border-bottom: 2px solid #ff5f6d;
+            border-radius: 5px;
         }
-
-        .email a:hover {
-            color: #ff9a9e;
-            border-bottom: 2px solid #ff9a9e;
+        .links a:hover {
+            background-color: #555;
         }
-
-        .social-icons {
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .contact-info {
             margin-top: 20px;
         }
+		
 
-        .social-icons img {
-            width: 40px;
-            margin: 0 10px;
-            transition: transform 0.3s ease;
-        }
-
-        .social-icons img:hover {
-            transform: scale(1.1);
-        }
-
-        /* Responsive for smaller screens */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 48px;
-            }
-
-            p {
-                font-size: 18px;
-            }
-        }
     </style>
 </head>
 <body>
-    <div class="container">
+
+    <!-- Header -->
+    <div class="header">
         <h1>Jolanamobu</h1>
-        <p>Creative and quality printed T-Shirts, Mugs, and more.</p>
-        <p>Website coming soon</p>
-        <div class="email">
-            <p>Contact us: <a href="mailto:Info@Jolanamobu.co.uk">Info@Jolanamobu.co.uk</a></p>
-        </div>
-        <div class="social-icons">
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
         </div>
     </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Statement art in clothes that are unapologetically you</h2>
+        <p>Shop our latest designs on your favorite platform</p>
+        <button>Shop Now</button>
+    </div>
+
+    <!-- Links Section -->
+    <div class="links">
+        <a href="#" target="_blank">Etsy</a>
+        <a href="#" target="_blank">Shopify</a>
+        <a href="#" target="_blank">Amazon</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Jolanamobu</p>
+        <p class="contact-info">Contact us at: <a href="mailto:info@jolanamobu.co.uk">info@jolanamobu.co.uk</a></p>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+    </div>
+
 </body>
 </html>
